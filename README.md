@@ -1,0 +1,1 @@
+clang++ -std=c++17 -fdiagnostics-color=always -Wall -I./dependencies/include -L./dependencies/library -Wl,-rpath,@loader_path/dependencies/library ./dependencies/library/libglfw.3.dylib main.cpp glad.c -o app -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo -framework CoreFoundation
